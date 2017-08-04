@@ -6,7 +6,7 @@ const os = require('os');
 
 const eol = common.isWindows ? '\r\n' : '\n';
 
-assert.strictEqual(eol, os.EOL);
+assert.strictEqual(os.EOL, eol);
 
 common.expectsError(function() {
   os.EOL = 123;
